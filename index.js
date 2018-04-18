@@ -99,7 +99,7 @@ function getCaretCoordinates(element, position, options) {
     if (element.scrollHeight > parseInt(computed.height))
       style.overflowY = 'scroll';
   } else {
-    style.overflow = 'hidden';  // for Chrome to not render a scrollbar; IE keeps overflowY = 'scroll'
+    // style.overflow = 'hidden';  // for Chrome to not render a scrollbar; IE keeps overflowY = 'scroll'
   }
 
   div.textContent = element.value.substring(0, position);
